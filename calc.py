@@ -28,37 +28,27 @@ display.grid(row = 0, column = 0, columnspan = 5)
 
 def click_event(key):
 
-	# = -> calculate results
     if key == '=':
-        # safeguard against integer division
         if '/' in display.get() and '.' not in display.get():
             display.insert(tk.END, ".0")
 			
-        # attempt to evaluate results
         try:
             result = eval(display.get())
             display.insert(tk.END, " = " + str(result))
         except:
             display.insert(tk.END, "   Error, use only valid chars")
-			
-	# C -> clear display		
+				
     elif key == 'C':
         display.delete(0, tk.END)
-		
-		
-	# $ -> clear display		
+				
     elif key == '$':
         display.delete(0, tk.END)
         display.insert(tk.END, "$$$$C.$R.$E.$A.$M.$$$$")
-		
-
-	# @ -> clear display		
+				
     elif key == '@':
         display.delete(0, tk.END)
         display.insert(tk.END, "joshhhhh")		
 
-		
-	# neg -> negate term
     elif key == 'neg':
         if '=' in display.get():
             display.delete(0, tk.END)
@@ -70,11 +60,9 @@ def click_event(key):
         except IndexError:
             pass
 
-	# clear display and start new input		
     else:
         if '=' in display.get():
             display.delete(0, tk.END)
         display.insert(tk.END, key)
 
-# RUNTIME
 calc.mainloop()
