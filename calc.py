@@ -2,7 +2,7 @@ import tkinter as tk
 print ("Welcome to Josh's Calculator");
 
 calc = tk.Tk()
-calc.title("Calci")
+calc.title("Numbers Daddy")
 
 buttons = [
 '7',  '8',  '9',  '*',  'C',
@@ -10,7 +10,6 @@ buttons = [
 '1',  '2',  '3',  '-',  '$',
 '0',  '.',  '=',  '+',  '@' ]
 
-# set up GUI
 row = 1
 col = 0
 for i in buttons:
