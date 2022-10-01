@@ -1,6 +1,17 @@
 import tkinter as tk
+from tkinter import *
+import time
+
 print ("Welcome to Josh's Calculator");
 print ("----------------------------");
+
+root = Tk()
+root.geometry = ("200x50")
+root.config(bg='grey')
+
+def.update():
+    clock.config(text=time.strftime("%Y-%m-%d %H:%M:%S"))
+    clock.after(1000,update)
 
 calc = tk.Tk()
 calc.title("Numbers Daddy")
