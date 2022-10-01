@@ -1,5 +1,6 @@
 import tkinter as tk
 print ("Welcome to Josh's Calculator");
+print ("----------------------------");
 
 calc = tk.Tk()
 calc.title("Numbers Daddy")
