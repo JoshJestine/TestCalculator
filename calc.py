@@ -9,13 +9,22 @@ root = Tk()
 root.geometry = ("200x50")
 root.config(bg='grey')
 
-main = tk()
+"""main = tk()
 ourMessage = 'Welcome to the Calculator which is a scam'
-messageVar = Message(main, text= ourMessage)
+messageVar = Message(main, text= ourMessage)"""
 
-def.update():
-    clock.config(text=time.strftime("%Y-%m-%d %H:%M:%S"))
-    clock.after(1000,update)
+canvas = Tk()
+canvas.title("Digital Clock")
+canvas.geometry("350x200")
+canvas.resizable(1,1)
+label = Label(canvas, font=("Courier", 30, 'bold'), bg="blue", fg="white", bd =30)
+label.grid(row =0, column=1)
+def digitalclock():
+   text_input = time.strftime("%H:%M:%S")
+   label.config(text=text_input)
+   label.after(200, digitalclock)
+digitalclock()
+canvas.mainloop()
 
 calc = tk.Tk()
 calc.title("Numbers Daddy")
