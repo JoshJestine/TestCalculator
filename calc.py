@@ -9,6 +9,10 @@ root = Tk()
 root.geometry = ("200x50")
 root.config(bg='grey')
 
+main = tk()
+ourMessage = 'Welcome to the Calculator which is a scam'
+messageVar = Message(main, text= ourMessage)
+
 def.update():
     clock.config(text=time.strftime("%Y-%m-%d %H:%M:%S"))
     clock.after(1000,update)
