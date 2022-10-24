@@ -1,4 +1,5 @@
 from simple_colors import *
+from tkinter import *
 # normal and colored text
 print('Normal:', blue('Welcome Finxters!'))
 # print italic and colored text
