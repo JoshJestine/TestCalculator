@@ -19,8 +19,8 @@ def time():
 	lbl.config(text = string)
 	lbl.after(1000, time)
 
-lbl = Label(root, font = ('calibri', 40, 'bold'),
-			background = 'purple',
+lbl = Label(root, font = ('calibri', 30, 'bold'),
+			background = 'red',
 			foreground = 'white')
 
 lbl.pack(anchor = 'center')
