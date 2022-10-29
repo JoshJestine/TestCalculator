@@ -35,7 +35,7 @@ import tkinter as tk
 from PIL import Image
 
 root = tk.Tk()
-file="gif1.gif"
+file="dog.gif"
 
 info = Image.open(file)
 
