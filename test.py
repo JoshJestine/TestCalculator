@@ -39,9 +39,7 @@ file="dog.gif"
 
 info = Image.open(file)
 
-frames = info.n_frames  # gives total number of frames that gif contains
-
-# creating list of PhotoImage objects for each frames
+frames = info.n_frames
 im = [tk.PhotoImage(file=file,format=f"gif -index {i}") for i in range(frames)]
 
 count = 0
